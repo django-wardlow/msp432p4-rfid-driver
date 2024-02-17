@@ -17,8 +17,8 @@
  */
 
 /* DriverLib Includes */
+#include "rfid_driver.h"
 #include "ti/devices/msp432p4xx/driverlib/driverlib.h"
-#include "rfid_library.h"
 #include <stdint.h>
 #include <stdio.h> //printf(); sprintf();
 

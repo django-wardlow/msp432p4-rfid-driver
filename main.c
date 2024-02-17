@@ -1,6 +1,6 @@
+#include "rfid_driver.h"
 #include "ti/devices/msp432p4xx/driverlib/driverlib.h"
 #include "msp.h"
-#include "rfid_library.h"
 
 ///turn the uid from the last read card into a
 ///single number that can be easily understood by
@@ -17,9 +17,7 @@ uint32_t get_uid_sum()
     return sum;
 }
 
-/**
- * main.c
- */
+///prints the uid of a card when one brought in range
 void main(void)
 {
     //halt watchdog
